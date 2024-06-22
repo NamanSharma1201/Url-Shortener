@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background: #28a745;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover {
+        background: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sign Up Here</h1>
+    <form action="/user" method="POST">
+      <label for="fullname">Enter your full name</label>
+      <input
+        type="text"
+        id="fullname"
+        name="name"
+        placeholder="John Wick"
+        required
+      />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@sample.com"
+      />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" />
+
+      <button type="submit">Sign Up 🚀</button>
+    </form>
+  </body>
+</html>
